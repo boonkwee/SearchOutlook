@@ -25,7 +25,7 @@ def search_email_in_folder(folder, subject: str='', method: str = 'contains', di
     return payload
 
 
-def pull_em_text_all(subject:str='FW: ED Bed WT')-> list:
+def pull_em_text_all(subject:str='')-> list:
     if subject=='':
         return None
     outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI")
